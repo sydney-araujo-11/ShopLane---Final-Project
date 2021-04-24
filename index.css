@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+body{
+    margin: 0;
+    padding: 0; 
+    font-family: 'Open Sans', sans-serif;
+}
+#topbar{
+    width: 100%;
+    box-shadow: 0 2px 5px #ccc;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 16px 8%;
+}
+#shoplane{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+#search-bar{
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+}
+#cart-user{
+    display:flex;
+    justify-content: end;
+    align-items: center;
+}
+#logo{
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-right: 16px;
+}
+#logo > a{
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+#logo span{
+    font-weight: 800;
+}
+#shoplane > a{
+    text-decoration: none;
+    color: #000;
+    margin-left: 32px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+#search-bar{
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+}
+#search-bar > i{
+    position: absolute;
+    color: #999;
+    font-size: 18px;
+    top: 50%;
+    left: 18px;
+    transform: translateY(-50%);
+}
+.fa-search::before{
+    content: "\f002";
+}
+#search-box{
+    width: 100%;
+    border: 1px solid rgb(245,242,242);
+    background-color: rgb(245,242,242);
+    box-sizing: border-box;
+    padding: 10px 24px 8px 48px;
+    color: #000;
+    outline: none;
+}
+#search-icon{
+    display: none;
+    cursor: pointer;
+}
+#cart-wrapper{
+    position: relative;
+    margin-right: 32px;
+}
+#cart-wrapper i{
+    font-size: 18px;
+    cursor: pointer;
+}
+#cart-count{
+    width: 18px;
+    height: 18px;
+    font-size: 12px;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-weight: 600;
+    background-color: #009688;
+    color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: -12px;
+    right: -12px;
+}
+.fa-shopping-cart:before{
+    content: "\f07a";
+}
+#cart-wrapper > a{
+    text-decoration: none;
+    color:#000
+}
+#cart-user > img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+/*===========================================================*/
+#main{
+    width: 100%;
+    min-height: 80vh;
+    box-sizing: border-box;
+    margin-top: 100px;
+    padding-bottom: 8%;
+}
+.center{
+    width: 80%;
+    margin: 0 auto;
+    z-index: -1;
+}
+/*=========================================*/
+.category-section{
+    padding: 4% 8% 0;
+}
+.section-heading{
+    font-size: 28px;
+    font-weight: 600;
+}
+.product-grid{
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+.product-card {
+    width: 19%;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 5px #ccc;
+    border-radius: 5px;
+}
+.product-card > a {
+    text-decoration: none;
+    color: black;
+}
+.product-image {
+    width: 100%;
+}
+.product-details {
+    box-sizing: border-box;
+    padding: 16px;
+}
+.product-details > h4 {
+    font-weight: 600;
+    margin: 0;
+    font-size: 16px;
+}
+.product-details > h5 {
+    font-weight: 600;
+    margin: 0;
+    margin-top: 12px;
+}
+.product-details > p {
+    margin: 0;
+    margin-top: 12px;
+    font-weight: 600;
+    color: #009688;
+}
+/*================================================*/
+#edyoda-logo {
+    width: 128px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+/*================================================*/
+#footer {
+    width: 100%;
+    background-color: #1c1b1e;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 4% 8%;
+}
+.footer-heading {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+    color: white;
+    opacity: 0.9;
+    letter-spacing: 1px;
+}
+.footer-link {
+    text-decoration: none;
+    color: white;
+    display: block;
+    margin-top: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 14px;
+    opacity: 0.8;
+}
+#footer > div {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+@media screen and (max-width: 768px)
+{
+    #topbar #logo{
+        font-size: 25px;
+        padding: 0;
+        margin-left: 20px;
+    }
+    #shoplane > a{
+        display: none;
+    }
+    #cart-user > img{
+        display: none;
+    }
+    #cart-wrapper{
+        margin-right: 10px;
+        margin-left: 30px;
+    }
+    #hamburgerBtn{
+        display:block;
+    }
+    #search-bar{
+        width: 50%;
+        z-index: -1;
+        box-sizing: content-box;
+        margin-left: 50px;
+    }
+    .product-grid{
+        flex-direction: column;
+    }
+    .category-section{
+        padding: 12% 20% 0;
+    }
+    .section-heading{
+        font-size: 20px;
+    }
+     .product-card{
+         width: 100%;
+     }
+     .product-details > h4 {
+        font-size: 16px;
+    }
+    #footer{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-heading {
+        margin-top: 30px;
+    }
+    #edyoda-logo{
+        width: 20%;
+        right: 15px;
+        bottom: 15px;
+    }
+}
+@media screen and (max-width: 479px)
+{
+    #topbar #logo{
+        font-size: 20px;
+        padding: 0;
+    }
+    #shoplane > a{
+        display: none ;
+    }
+    #cart-user > img{
+        display: none;
+    }
+    #cart-wrapper{
+        margin-right: 10px;
+        margin-left: 30px;
+    }
+    #search-bar{
+        display: none;
+    }
+    #hamburgerBtn{
+        display: block;
+    }
+    #search-icon{
+        display: inline-block;
+        margin-right: 10px;
+    }
+    .product-grid{
+        flex-direction: column;
+    }
+    .category-section{
+        padding: 12% 10% 0;
+    }
+    .section-heading{
+        font-size: 20px;
+    }
+     .product-card{
+         width: 100%;
+     }
+     .product-details > h4 {
+        font-size: 14px;
+    }
+    #edyoda-logo{
+        width: 30%;
+        right: 15px;
+        bottom: 15px;
+    }
+}

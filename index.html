@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopLane - Final Project</title>
+    <link rel = "stylesheet" href = "./index.css">
+    <link rel = "stylesheet" href = "./sidebar.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/35c398e458.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" />				
+</head>
+<body>
+    <div id="topbar">
+        <div id="hamburgerBtn">
+            <span><i class="fas fa-bars"></i></span>
+        </div>
+        <div class="sidebar">
+            <div id="user-icon-wrapper">
+                <div class="user-icon">
+                    <img src="https://www.biography.com/.image/t_share/MTc5OTQ5OTg4NjY5ODI2MTcw/gettyimages-971463110.jpg">
+                </div>
+                <h3>Sydney Araujo</h3>
+                <p>sydneyaraujo.21@gmail.com</p>
+            </div>
+            
+            <ul>
+                <li><a href="#clothing-section">Clothing</a></li>
+                <li><a href="#accessory-section">Accessories</a></li>
+                <li><a href="./checkout.html">Go to Cart</a></li>
+            </ul>
+            <div class="sidebarBtn_close">
+                <span><i class="fas fa-times"></i></span>
+            </div>
+        </div>
+        <div id="shoplane">
+            <div id = "logo">
+                <a href="./index.html">
+                    <span>Shop</span>lane
+                </a>
+            </div>
+            <a class="category" href="#clothing-section">Clothing</a>
+            <a class="category" href="#accessory-section">Accessories</a>
+        </div>
+        <div id="search-bar">
+            <i class="fa fa-search"></i>
+            <input id="search-box" type="text" name="search" placeholder="Search for Clothing and Accessories">
+        </div>
+        <div id="cart-user">
+            <div id="cart-wrapper">
+                <p id="cart-count">0</p>
+                <i id="search-icon" class="fa fa-search"></i>
+                <a href="./checkout.html">      
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+            </div>
+            <img src="https://www.biography.com/.image/t_share/MTc5OTQ5OTg4NjY5ODI2MTcw/gettyimages-971463110.jpg">
+        </div>
+    </div>
+    <div id="main">
+        <section>
+            <div class="center">
+                <img src="https://imgur.com/96OnkX7.png" />
+                <img src="https://imgur.com/KtGxwnN.png" />
+                <img src="https://imgur.com/sfjg9R8.png" />
+                <img src="https://imgur.com/p0wdadG.png" />
+            </div>
+        </section>
+        <section id="clothing-section" class="category-section">
+            <h3 class="section-heading">Clothing for Men and Women</h3>
+
+            <div id="clothing-grid" class="product-grid">
+            </div>
+        </section>
+        <section id="accessory-section" class="category-section">
+            <h3 class="section-heading">Accessories for Men and Women</h3>
+
+            <div id="accessory-grid" class="product-grid">
+            </div>
+        </section>
+    </div>
+    <img id="edyoda-logo" src="https://i.imgur.com/OKAY6Fl.png" alt="EdYoda Logo" />
+    <div id="footer">
+        <div>
+            <p class="footer-heading">Online Store</p>
+            <a href="/" class="footer-link">Men Clothing</a>
+            <a href="/" class="footer-link">Women Clothing</a>
+            <a href="/" class="footer-link">Men Accessories</a>
+            <a href="/" class="footer-link">Women Accessories</a>
+        </div>
+        <div>
+            <p class="footer-heading">Helpful Links</p>
+            <a href="/" class="footer-link">Home</a>
+            <a href="/" class="footer-link">About</a>
+            <a href="/" class="footer-link">Contact</a>
+        </div>
+        <div>
+            <p class="footer-heading">Partners</p>
+            <a href="/" class="footer-link">Zara</a>
+            <a href="/" class="footer-link">Pantaloons</a>
+            <a href="/" class="footer-link">Levis</a>
+            <a href="/" class="footer-link">UCB</a>
+            <a href="/" class="footer-link">+ Many More</a>
+        </div>
+        <div>
+            <p class="footer-heading">Address</p>
+            <p href="/" class="footer-link">Building 101</p>
+            <p href="/" class="footer-link">Central Avenue</p>
+            <p href="/" class="footer-link">LA - 902722</p>
+            <p href="/" class="footer-link">United States</p>
+        </div>
+    </div>
+    <script src='./cart-count.js'></script>    
+    <script src="./index.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript">
+        $('.center').slick({
+                centerMode: true,
+                centerPadding: '0px',
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: true,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                arrows: false,
+                
+                responsive: [
+                    {
+                    breakpoint: 768,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '0px',
+                        slidesToShow: 1
+                    }
+                    },
+                    {
+                    breakpoint: 479,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '0px',
+                        slidesToShow: 1,
+                    }
+                    }
+                ]
+});
+    </script>
+</body>
+</html>

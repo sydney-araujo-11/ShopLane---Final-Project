@@ -1,0 +1,121 @@
+#main-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4%;
+}
+
+#tick-wrapper{
+    width: 200px;
+    height: 200px;
+    background-color: #49d049;
+    border-radius: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+    animation: popup 1s;
+}
+
+#tick-wrapper img {
+    width: 100%;
+}
+
+@keyframes popup {
+    0% {
+        transform: scale(0);
+    }
+
+    60% {
+        transform: scale(1.25, 1.25);
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+.main-heading {
+    font-size: 36px;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 600;
+    margin: 0;
+    margin-top: 48px;
+    margin-bottom: 16px;
+}
+
+.section-heading {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 16px;
+}
+/*================================================*/
+#edyoda-logo {
+    width: 128px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+/*==========================================*/
+#footer {
+    width: 100%;
+    background-color: #1c1b1e;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 4% 8%;
+}
+.footer-heading {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+    color: white;
+    opacity: 0.9;
+    letter-spacing: 1px;
+}
+.footer-link {
+    text-decoration: none;
+    color: white;
+    display: block;
+    margin-top: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 14px;
+    opacity: 0.8;
+}
+#footer > div {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+@media screen and (max-width: px)
+{
+    #edyoda-logo{
+        width: 20%;
+        right: 15px;
+        bottom: 15px;
+    }
+}
+@media screen and (max-width: 479px)
+{
+    #tick-wrapper{
+        width: 150px;
+        height: 150px;
+        padding: 20px;
+    }
+    .main-heading {
+        font-size: 25px;
+    }
+    
+    .section-heading {
+        font-size: 15px;
+        text-align: center;
+        margin: 10px;;
+    }
+    #edyoda-logo{
+        width: 30%;
+        right: 15px;
+        bottom: 15px;
+    }
+}
